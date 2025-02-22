@@ -4,7 +4,6 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Random;
 
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
 @Service

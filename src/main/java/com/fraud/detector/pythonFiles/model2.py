@@ -7,7 +7,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, precision_score
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
@@ -54,7 +54,7 @@ def deploy():
     X_train, X_test, y_train, y_test = train_test_split(X_processed, y, test_size=0.3, random_state=42)
 
     # Train the Logistic Regression model
-    model = LinearRegression()
+    model =LogisticRegression()
     model.fit(X_train, y_train)
 
     # Save the model and preprocessor to a specific directory
