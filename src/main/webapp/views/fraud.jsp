@@ -59,7 +59,7 @@
     
     <h1 style="text-align: center;">SCAM AWARE</h1>    <!-- Include Header -->
     <%@ include file="header.jsp" %>
-    <h2>For The Start Page, Pls Click the "Updated Scores"</h2>
+
 
     <div class="dashboard-container">
         <!-- Left: Time-Series Graph -->

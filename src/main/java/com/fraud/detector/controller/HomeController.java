@@ -1,14 +1,12 @@
 package com.fraud.detector.controller;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+
 
 import com.fraud.detector.service.FraudService;
 import com.fraud.detector.service.PythonExec;
@@ -27,14 +25,13 @@ public class HomeController {
     }
 
 
-    @RequestMapping("/fraud")
+    @RequestMapping("/")
     public String displayLiveGraph(Model model){
         callPython();
         model.addAttribute("fraudData", fraudService.getFraudData());
         model.addAttribute("fraudData", fraudService.getFraudData());
         model.addAttribute("metrics", fraudService.getMetrics());
         model.addAttribute("interpretability", fraudService.getModelInterpretability());
-        callPython();
         return "fraud";
     }
 
