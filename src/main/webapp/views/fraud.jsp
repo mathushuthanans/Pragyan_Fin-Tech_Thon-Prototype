@@ -57,7 +57,7 @@
 </head>
 <body>
     
-    <h1 style="text-align: center;">SCAM AWARE</h1>    <!-- Include Header -->
+    <h1 style="text-align: center;">Scam Aware: App to detect Fraud Transactions</h1>    <!-- Include Header -->
     <%@ include file="header.jsp" %>
 
 
